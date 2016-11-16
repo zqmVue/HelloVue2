@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>v-for</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="Ex04">
+      <ol>
+        <li v-for="todo in todos">
+          {{todo.title}}
+        </li>
+      </ol>
+    </div>
+  </body>
+  <script>
+    var app4 = new Vue({
+      el: "#Ex04",
+      data: {
+        todos: [
+          {title: "A"},
+          {title: "B"},
+          {title: "C"},
+        ]
+      }
+    })
+  </script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>v-model</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="Ex06">
+      <p>{{message}}</p>
+      <input v-model="message"/>
+    </div>
+  </body>
+  <script>
+    var app06 = new Vue({
+      el: "#Ex06",
+      data: {
+        message: "Hello Vue 2.0",
+      }
+    })
+  </script>
+</html>
